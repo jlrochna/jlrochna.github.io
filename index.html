@@ -1,10 +1,116 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <title>Jordan Rochna</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name | Theatre Performer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.5; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px; }
+    header { display: grid; grid-template-columns: 160px 1fr; gap: 18px; align-items: center; }
+    .headshot { width: 160px; height: 200px; object-fit: cover; border-radius: 10px; background: #eee; }
+    h1 { margin: 0; font-size: 34px; }
+    .tag { margin: 6px 0 0; opacity: 0.8; }
+    nav { margin-top: 18px; display: flex; gap: 14px; flex-wrap: wrap; }
+    nav a { text-decoration: none; border: 1px solid #ddd; padding: 8px 10px; border-radius: 999px; color: #111; }
+    section { margin-top: 28px; padding-top: 18px; border-top: 1px solid #eee; }
+    h2 { margin: 0 0 10px; font-size: 20px; }
+    ul { margin: 0; padding-left: 18px; }
+    .grid { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 14px; }
+    .btn { display: inline-block; margin-top: 10px; text-decoration: none; border: 1px solid #ddd; padding: 10px 12px; border-radius: 10px; color: #111; }
+    .small { font-size: 14px; opacity: 0.85; }
+    iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 12px; }
+    @media (max-width: 720px) { header { grid-template-columns: 1fr; } .headshot { width: 100%; height: 320px; } .grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
+
 <body>
-  <h1>Jordan Rochna</h1>
-  <p>Theatre Performer</p>
+  <div class="wrap">
+    <header>
+      <img class="headshot" src="headshot.jpg" alt="Headshot of Your Name" />
+      <div>
+        <h1>Your Name</h1>
+        <p class="tag">Theatre Performer | Vocal Range: ___ | Height: ___</p>
+        <p class="small">Based in ___. Available for theatre, musical theatre, and film.</p>
+
+        <nav>
+          <a href="#reel">Reel</a>
+          <a href="#credits">Credits</a>
+          <a href="#training">Training</a>
+          <a href="#skills">Special Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="reel">
+      <h2>Reel</h2>
+      <div class="card">
+        <p class="small">Replace the video link below with your YouTube or Vimeo embed.</p>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Reel"></iframe>
+      </div>
+    </section>
+
+    <section id="credits">
+      <h2>Selected Credits</h2>
+      <div class="grid">
+        <div class="card">
+          <h3 style="margin:0 0 8px;">Theatre</h3>
+          <ul>
+            <li><strong>Show</strong> — Role (Company/School)</li>
+            <li><strong>Show</strong> — Role (Company/School)</li>
+            <li><strong>Show</strong> — Role (Company/School)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin:0 0 8px;">Film/TV</h3>
+          <ul>
+            <li><strong>Project</strong> — Role (Director)</li>
+            <li><strong>Project</strong> — Role (Director)</li>
+          </ul>
+        </div>
+      </div>
+
+      <a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+    </section>
+
+    <section id="training">
+      <h2>Training</h2>
+      <div class="card">
+        <ul>
+          <li>School/Studio — Program, Teacher</li>
+          <li>Acting: ___ | Voice: ___ | Dance: ___</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Special Skills</h2>
+      <div class="card">
+        <p class="small">A few examples: accents, instruments, stage combat, juggling, improv, dialects.</p>
+        <ul>
+          <li>___</li>
+          <li>___</li>
+          <li>___</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></p>
+        <p><strong>Representation:</strong> Agent/Manager name (optional)</p>
+        <p class="small">Instagram: @___ | Backstage: ___ | Actors Access: ___</p>
+      </div>
+    </section>
+
+    <p class="small" style="margin-top:18px; opacity:0.7;">© <span id="y"></span> Your Name</p>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
