@@ -2,69 +2,41 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jordan Rochna</title>
-  <style>
-    body { margin:0; font-family: Arial, sans-serif; }
-    header { text-align:center; padding:30px 20px; }
-    h1 { letter-spacing:2px; }
-    nav a { margin:0 10px; text-decoration:none; color:black; }
-    .photos { display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; max-width:1000px; margin:20px auto; }
-    .photos img { width:100%; height:400px; object-fit:cover; }
-    .footer { text-align:center; margin:40px 0; font-size:14px; }
-    @media (max-width:700px) {
-      .photos { grid-template-columns:1fr; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-<header>
-  <h1>JORDAN ROCHNA</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Headshot & Resume</a>
-    <a href="#">Media</a>
-    <a href="#">Gallery</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
-
-<div class="photos">
-<img src="headshot1.png.jpeg">
-<img src="headshot2.png.jpeg">
-<img src="headshot3.png.jpeg">
-</div>
-
-  <div style="text-align:center; margin:30px;">
-  <a href="Rochna Resume (full).pdf" target="_blank">Download Resume</a>
-</div>
-<div style="max-width:900px; margin:40px auto; text-align:center;">
-  <h2>Reels</h2>
-
-  <div style="margin:20px 0;">
-    <iframe width="100%" height="400"
-      src="https://www.youtube.com/embed/fsxgi093LdA"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
+  <div class="topbar">
+    <div class="nav">
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Headshot &amp; Resume</a>
+        <a href="media.html">Media</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social">
+        <a href="https://www.instagram.com/jordanrochna/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/@jordanrochna" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
   </div>
 
-  <div style="margin:20px 0;">
-    <iframe width="100%" height="400"
-      src="https://www.youtube.com/embed/nWwgqxxZlSA"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
+  <div class="container">
+    <div class="title">JORDAN ROCHNA</div>
+
+    <div class="grid3">
+      <div class="card"><img class="photo" src="headshot1.png.jpeg" alt="Headshot 1"></div>
+      <div class="card"><img class="photo" src="headshot2.png.jpeg" alt="Headshot 2"></div>
+      <div class="card"><img class="photo" src="headshot3.png.jpeg" alt="Headshot 3"></div>
+    </div>
+
+    <div class="footer">©2025 by Jordan Rochna.</div>
   </div>
-</div>
-
-<div class="footer">
-  ©2025 by Jordan Rochna
-</div>
-
 </body>
 </html>
+
 
 
 
